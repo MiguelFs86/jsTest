@@ -5,8 +5,7 @@ function loadWidgetStyles() {
   const link = document.createElement('link');
   link.setAttribute('rel', 'stylesheet');
   link.setAttribute('type', 'text/css');
-  // link.setAttribute('href', 'https://cdn.jsdelivr.net/gh/miguelFs86/jsTest/main/index.css');
-  link.setAttribute('href', 'https://ghcdn.rawgit.org/MiguelFs86/jsTest/main/index.css');
+  link.setAttribute('href', 'https://cdn.jsdelivr.net/gh/miguelFs86/jsTest/main/index.css');
   document.head.appendChild(link);
   link.onload = () => {
     createWidget();
