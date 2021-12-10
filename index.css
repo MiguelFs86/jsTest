@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;500&display=swap');
+#widget-main-div {
+    z-index: 99999;
+    position: 'absolute';
+    top: '100px';
+    left: '200px';
+    width: '350px';
+    padding: '20px';
+    box-shadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px';
+    font-family: 'Cairo, sans-serif';
+    background-color: 'white';
+}
+
+#widget-div-title {
+    font-weight: 'bold';
+    text-decoration: 'underline';
+    margin: '0';
+    font-size: '1.8rem';
+    color: '#34558b';
+}
+
+#widget-div-content {
+    text-align: 'justify';
+    line-height: '1.6rem';
+    color: '#798fa8';
+}
