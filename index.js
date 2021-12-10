@@ -4,7 +4,7 @@ function loadExternalFonts() {
   const link = document.createElement('link');
   link.setAttribute('rel', 'stylesheet');
   link.setAttribute('type', 'text/css');
-  link.setAttribute('href', 'https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700');
+  link.setAttribute('href', 'https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;500&display=swap');
   document.head.appendChild(link);
 }
 
@@ -18,25 +18,31 @@ function getDivText() {
 
 function applyDivStyles(element) {
   element.id = 'widget-main-div';
-  element.style.zIndex = 999;
+  element.style.zIndex = 99999;
   element.style.position = 'absolute';
   element.style.top = '100px';
   element.style.left = '200px';
-  element.style.width = '250px';
+  element.style.width = '350px';
   element.style.padding = '20px';
   element.style.boxShadow = 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px';
-  element.style.fontFamily = "Arial, Sans Serif";
+  element.style.fontFamily = 'Cairo, sans-serif';
+  element.style.backgroundColor = "white";
 }
 
 function applyTitleStyles(element) {
   element.id = 'widget-div-title';
   element.style.fontWeight = 'bold';
   element.style.textDecoration = 'underline';
+  element.style.margin = '0';
+  element.style.fontSize = '1.8rem';
+  element.style.color = '#34558b'
 }
 
 function applyContentStyles(element) {
   element.id = 'widget-div-content';
   element.style.textAlign = 'justify';
+  element.style.lineHeight = '1.6rem';
+  element.style.color = '#798fa8';
 }
 
 function init() {
