@@ -1,4 +1,4 @@
-let SEPWidgetConfig = {
+var SEPWidgetConfig = {
   apiServerURL: 'https://api-server-dev.swiss-energypark.com/',
   colors: {
     green: '#00aa3e',
@@ -90,7 +90,7 @@ let SEPWidgetConfig = {
   fontSize: '1rem'
 };
 
-let consumptionFactor = {
+var consumptionFactor = {
   houseHoldFactor: 1/15.3,
   hairDryer: 1/2,
   fridge: 1/0.15,
