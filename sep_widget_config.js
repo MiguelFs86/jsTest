@@ -1,11 +1,20 @@
-var SEPWidgetConfig = {
+// https://swiss-energypark.com/wp-content/uploads/monitoring/graphics/1.png
+let SEPWidgetConfig = {
   apiServerURL: 'https://api-server-dev.swiss-energypark.com/',
   colors: {
-    green: '#00aa3e',
+    green: '#00925b',
     lightGreen: '#51CC5B',
     blue: '#94c3e3',
     gray: '#a0a1a3',
     darkGray: '#6e7b8a'
+  },
+  kpiWidgetConfig: {
+    titleFontSize: 1,
+    titleFontColor: '#a0a1a3',
+    valueFontSize: 2.2,
+    valueFontColor: '#00925b',
+    unitsFontSize: 1,
+    unitsFontColor: '#a0a1a3'
   },
   lineChartConfig: {
     responsiveConfig: {
@@ -19,6 +28,8 @@ var SEPWidgetConfig = {
       startingValue: 8,
       cutIn: 14,
       cutOff: 90,
+      maxProcessCapacity: 25,
+      hydroStartingProducing: 5, 
       lineColor: '#94c3e3',
       textColor: '#94c3e3',
       textBackgroundColor: '#ffffffa8',
@@ -39,7 +50,7 @@ var SEPWidgetConfig = {
     percentageFontSize: 24,
     percentageFontColor: '#ffffff',
     percentageFontWeight: 500,
-    limitToDisplayPercentages: 5,
+    limitToDisplayPercentages: 0,
     percentagePositionOffset: 10
   },
   globalLineChartConfig: {
@@ -52,7 +63,7 @@ var SEPWidgetConfig = {
     blueFill: '#81b9dd60',
     darkGrayFill: '#64656660',
     lineThickness: 3,
-    pointRadius: 0.2,
+    pointRadius: 0.9,
     lineTension: 0.2,
     legendSquareHeight: 25,
     legendSquareWidth: 25,
@@ -69,28 +80,28 @@ var SEPWidgetConfig = {
     titleFontSize: 1.2,
     titleColor: '#646566',
     valueFontSize: 4,
-    valueColor: '#000000'
+    valueColor: '#00925b'
   },
   consumptionValueWidget: {
     titleFontSize: 1.2,
     titleColor: '#646566',
     valueFontSize: 4,
-    valueColor: '#000000'
+    valueColor: '#00925b'
   },
   selfCoverageValueWidget: {
     titleFontSize: 1.2,
     titleColor: '#646566',
     valueFontSize: 4,
-    valueColor: '#51cb5c',
+    valueColor: '#00925b',
     tooltipTitlesFontSize: 1,
     tooltipTitlesColor: '#646566',
     tooltipValuesFontSize: 3,
-    tooltipValuesColor: '#51cb5c'
+    tooltipValuesColor: '#00925b'
   },
   fontSize: '1rem'
 };
 
-var consumptionFactor = {
+let consumptionFactor = {
   houseHoldFactor: 1/15.3,
   hairDryer: 1/2,
   fridge: 1/0.15,
